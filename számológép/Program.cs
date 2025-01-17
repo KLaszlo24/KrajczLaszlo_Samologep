@@ -24,6 +24,7 @@ namespace számológép
 			Osszeadas();
 			Kivonas();
 			Osztas();
+			Szorzas();	
 		}
 		static void Osszeadas()
 		{
@@ -39,6 +40,11 @@ namespace számológép
 		{
 			float oszt = szam1 / szam2;
 			Console.WriteLine($"Két szám hányadosa: {oszt}");
+		}
+		static void Szorzas()
+		{
+			float szor = szam1 * szam2;
+			Console.WriteLine($"Két szám szorzata: {szor}");
 		}
 	}
 }
