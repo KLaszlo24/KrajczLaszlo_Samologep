@@ -8,8 +8,8 @@ namespace számológép
 {
 	internal class Program
 	{
-		static int szam1 = 0;
-		static int szam2 = 0;
+		static float szam1 = 0;
+		static float szam2 = 0;
 
 
 
@@ -23,16 +23,22 @@ namespace számológép
 
 			Osszeadas();
 			Kivonas();
+			Osztas();
 		}
 		static void Osszeadas()
 		{
-			int ossz = szam1 + szam2;
+			float ossz = szam1 + szam2;
             Console.WriteLine($"Két szám összeadava: {ossz}");
         }
 		static void Kivonas()
 		{
-			int kivon = szam1 - szam2;
+			float kivon = szam1 - szam2;
 			Console.WriteLine($"Két szám kivonva egymásból: {kivon}");
+		}
+		static void Osztas()
+		{
+			float oszt = szam1 / szam2;
+			Console.WriteLine($"Két szám hányadosa: {oszt}");
 		}
 	}
 }
