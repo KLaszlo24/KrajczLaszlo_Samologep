@@ -22,11 +22,17 @@ namespace számológép
 
 
 			Osszeadas();
+			Kivonas();
 		}
 		static void Osszeadas()
 		{
-			int szam3 = szam1 + szam2;
-            Console.WriteLine($"Két szám összeadava: {szam3}");
+			int ossz = szam1 + szam2;
+            Console.WriteLine($"Két szám összeadava: {ossz}");
         }
+		static void Kivonas()
+		{
+			int kivon = szam1 - szam2;
+			Console.WriteLine($"Két szám kivonva egymásból: {kivon}");
+		}
 	}
 }
